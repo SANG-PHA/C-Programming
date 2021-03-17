@@ -10,10 +10,11 @@ int main(void)
 	p = arr; //p는 arr을 가리키도록 설정
 
 	printf("초기 배열 : ");
+	
 	for (int i = 0; i < 10; i++)
 	{
-		printf("%d ", p[i]);
-	} //출력
+		printf("%d ", p[i]); //출력
+	}
 
 	int n = remove_zeros(p, 10);
 
@@ -23,8 +24,8 @@ int main(void)
 	printf("\n바뀐 배열 : ");
 	for (int i = 0; i < n; i++)
 	{
-		printf("%d ", p[i]);
-	} //출력
+		printf("%d ", p[i]); //출력
+	}
 
 	p = NULL;
 	free(p);
