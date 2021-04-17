@@ -1,0 +1,60 @@
+Circle.h
+
+#include <iostream> 
+
+using namespace std;
+
+//Circle 클래스 선언부
+class Circle {
+private:
+	int radius;
+public:
+	Circle();
+	Circle(int r);
+	double getArea();
+};
+
+
+
+
+Circle.cpp
+
+
+#include "Circle.h"
+
+//Circle 클래스 구현부
+//2가지 생성자 구현
+Circle::Circle() {
+	radius = 1;
+	cout << "반지름 " << radius;
+	cout << " 원 생성" << endl;
+}
+
+Circle::Circle(int r) {
+	radius = r;
+	cout << "반지름 " << radius;
+	cout << " 원 생성" << endl;
+}
+
+//getArea() 함수 구현
+double Circle::getArea() {
+	return 3.14*radius*radius;
+}
+
+
+
+main.cpp
+
+#include "Circle.h"
+
+int main() {
+	Circle donut; //Circle객체 donut 생성
+	double area = donut.getArea();
+	cout << "donut 면적은 ";
+	cout << area << endl;
+
+	Circle pizza(30); //Circle객체 pizza 생성
+	area = pizza.getArea();
+	cout << "pizza 면적은 ";
+	cout << area << endl;
+}
