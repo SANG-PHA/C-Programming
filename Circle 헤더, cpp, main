@@ -1,4 +1,4 @@
-Circle.h
+// Circle.h
 
 #include <iostream> 
 
@@ -17,7 +17,7 @@ public:
 
 
 
-Circle.cpp
+// Circle.cpp
 
 
 #include "Circle.h"
@@ -43,7 +43,7 @@ double Circle::getArea() {
 
 
 
-main.cpp
+// main.cpp
 
 #include "Circle.h"
 
