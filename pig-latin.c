@@ -19,7 +19,7 @@ int main(void)
 		translator(s, p); //문장을 변환
 		display(s, p); //출력
 
-		printf("그만하시려면 1을 입력하세요.");
+		printf("하시려면 1을 입력하세요.");
 		scanf("%d", &check);
 		getchar(); //버퍼제거
 
