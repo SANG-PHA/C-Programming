@@ -23,7 +23,7 @@ Power Power::operator+(const Power& a) {
 	tmp.punch = this->punch + a.punch;
 	return tmp;
 }
-
+ 
 void Power::show() {
 	cout << "kick = " << kick << ", punch = " << punch << endl;
 }
