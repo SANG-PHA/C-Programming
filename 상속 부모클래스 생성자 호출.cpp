@@ -13,9 +13,11 @@ public:
 	B() : A(20) {
 		cout << "생성자 B " << endl;
 	}
+	
 	B(int x) : A(20 + x) { 
 		cout << "생성자 B " << x << endl; 
 	}
+	
 	~B() { cout << "소멸자 B" << endl; }
 };
 
