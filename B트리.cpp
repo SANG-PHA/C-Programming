@@ -141,6 +141,7 @@ void BTreeNode::insertNonFull(int k)
         keys[i + 1] = k;
         n = n + 1;
     }
+    
     else // 리프 노드가 아니라면
     {
         // 새로운 키가 삽입될 자식노드 탐색
