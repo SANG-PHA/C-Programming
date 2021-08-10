@@ -23,9 +23,7 @@ int main(void)
 
 	printf("\n바뀐 배열 : ");
 	for (int i = 0; i < n; i++)
-	{
 		printf("%d ", p[i]); //출력
-	}
 
 	p = NULL;
 	free(p);
